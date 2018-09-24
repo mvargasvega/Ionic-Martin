@@ -5,13 +5,23 @@
 </ion-header>
 
 <ion-content padding>
+  <h3>We are trying something new with Noe & Martin!</h3>
   <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <button ion-button> Sign Up</button>
+  <button ion-button full>Win a prize</button>
+  <ion-item>
+    <ion-label>Your Name</ion-label>
+    <ion-toggle disabled checked="true"></ion-toggle>
+  </ion-item>
+
+  <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="kittens">
+      Students
+      </ion-segment-button>
+      <ion-segment-button value="puppies">
+      Volunteers
+      </ion-segment-button>
+    </ion-segment>
+</div>
 </ion-content>
